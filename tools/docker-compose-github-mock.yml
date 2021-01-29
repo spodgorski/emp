@@ -1,0 +1,9 @@
+version: '3'
+services:
+  json-server:
+    image: vimagick/json-server
+    command: -H 0.0.0.0 -p 3000 -w db.json --id login
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/data

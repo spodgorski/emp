@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    username: user_test
+    password: password_test
+    url: jdbc:postgresql://127.0.0.1:5555/interview

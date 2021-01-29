@@ -1,0 +1,23 @@
+security:
+  basic:
+    enabled: false
+
+logging:
+  level:
+    org:
+      springframework:
+        transaction:
+          interceptor: TRACE
+      hibernate:
+        SQL: DEBUG
+        type: TRACE
+    interview:
+      client:
+        github: TRACE
+
+spring:
+  jpa:
+    properties:
+      hibernate.show_sql: true
+      hibernate.format_sql: true
+      hibernate.generate_statistics: true

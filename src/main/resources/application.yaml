@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: user
+    password: password
+    url: jdbc:postgresql://127.0.0.1:5432/interview
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+
+configuration:
+  client:
+    github:
+      api-url: https://api.github.com

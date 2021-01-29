@@ -1,0 +1,19 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:13
+    ports:
+    - 5432:5432
+    environment:
+    - POSTGRES_USER=user
+    - POSTGRES_PASSWORD=password
+    - POSTGRES_DB=interview
+
+  postgres-integration-tests:
+    image: postgres:13
+    ports:
+    - 5555:5432
+    environment:
+    - POSTGRES_USER=user_test
+    - POSTGRES_PASSWORD=password_test
+    - POSTGRES_DB=interview

@@ -1,0 +1,8 @@
+logging:
+  level:
+    root: ERROR
+
+configuration:
+  client:
+    github:
+      api-url: http://127.0.0.1:3000
